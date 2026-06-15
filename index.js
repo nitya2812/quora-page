@@ -76,6 +76,10 @@ app.delete("/posts/:id", (req,res) =>{
     res.redirect("/posts");
 });
 
+app.get("/", (req, res) => {
+    res.redirect("/posts");
+});
+
 app.listen(port, () =>{
     console.log("listening to port : 8080");
 });
